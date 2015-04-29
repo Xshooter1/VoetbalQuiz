@@ -16,4 +16,12 @@ public class Question {
         this.stadium = stadium;
         this.club = club;
     }
+    
+    public String getStadium(){
+        return stadium;
+    }
+    
+    public String getClub(){
+        return club;
+    }
 }
