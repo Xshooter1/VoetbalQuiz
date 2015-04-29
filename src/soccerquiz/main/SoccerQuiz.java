@@ -6,8 +6,6 @@
 package soccerquiz.main;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import soccerquiz.logic.QuizManager;
 import soccerquiz.presentation.GUI;
 
 /**
@@ -19,19 +17,13 @@ public class SoccerQuiz extends JFrame{
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         JFrame frame = new SoccerQuiz();
 
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         frame.setTitle( "Soccer Quiz" );
-        JPanel panel = new GUI();
-        frame.setContentPane( panel );
+        frame.setContentPane( new GUI() );
         frame.setVisible( true );
         frame.pack();
-        
-        QuizManager quiz = new QuizManager();
-        System.out.println(quiz.getRandomClubName());
-        System.out.println("" + quiz.getStadiumNames());
     }
 
 }
