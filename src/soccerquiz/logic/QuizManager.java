@@ -30,6 +30,7 @@ public class QuizManager {
         newQuestion(new Question("De kuip","Feyenoord"));
         newQuestion(new Question("stadion Woudestein","Excelsior"));
         newQuestion(new Question("Amsterdam ArenA","Ajax"));
+        newQuestion(new Question("Philips stadion","PSV"));
     }
     
     /**
